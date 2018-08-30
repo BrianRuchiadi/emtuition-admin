@@ -1,0 +1,6 @@
+<div class="notifications" *ngIf="notes.length">
+    <div (click)="dismissNotification(note)" class="{{ note.type }}" *ngFor="let note of notes">
+        <i *ngIf="note.type === 'error'" class="fa fa-times-circle"></i>
+        <br/> {{ note.message }}
+    </div>
+</div>

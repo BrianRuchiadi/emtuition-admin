@@ -1,0 +1,7 @@
+@import './../variables';
+footer {
+    grid-area: footer;
+    background-color: $secondary-color;
+    // min-height: 50px;
+    // width: 100vw;
+}

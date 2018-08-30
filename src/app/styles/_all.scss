@@ -1,0 +1,66 @@
+@import 'variables';
+@import './helpers/typography';
+@import './helpers/button';
+@import './helpers/form';
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: grey;
+    }
+}
+
+body {
+    // background-color: #F1F1F1;
+    font-family: $main-font;
+}
+
+.wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: "aside content";
+    &.expanded {
+        grid-template-columns: 1fr;
+        grid-template-areas: "content";
+    }
+}
+
+.content {
+    grid-area: content;
+    font-family: $secondary-font;
+    background-color: #DAE1DE;
+    min-height: calc(100vh - 60px);
+    padding-top: 20px;
+    .title {
+        display: block;
+        border-radius: 3px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: $secondary-color;
+        h1 {
+            margin: 0;
+            padding-left: 25px;
+            letter-spacing: 1px;
+            .description {
+                font-size: 12px;
+                font-style: italic;
+                font-weight: 100;
+            }
+        }
+    }
+    i {
+        color: $warning-color;
+        &.large {
+            font-size: 40px;
+            margin-right: 20px;
+        }
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}

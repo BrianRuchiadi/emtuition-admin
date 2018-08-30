@@ -1,0 +1,27 @@
+@import './../variables';
+header {
+    position: fixed;
+    display: grid;
+    box-shadow: -2px -5px 20px white;
+    top: 0;
+    left: 0;
+    min-height: 60px;
+    width: 100vw;
+    grid-template-columns: 200px auto;
+    background-color: black;
+    color: white;
+    .logo {
+        background-color: $primary-color;
+    }
+    .menu {
+        .fa-bars {
+            margin-top: 15px;
+            margin-left: 15px;
+            font-size: 25px;
+            &:hover {
+                color: $warning-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

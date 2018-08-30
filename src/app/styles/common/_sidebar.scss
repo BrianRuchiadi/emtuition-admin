@@ -1,0 +1,25 @@
+@import './../variables';
+aside {
+    grid-area: aside;
+    min-height: 200px;
+    ul {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background-color: $secondary-color;
+        li {
+            border-right: 5px solid $secondary-color;
+            i {
+                color: $warning-color;
+                font-size: 20px;
+                padding-right: 15px;
+            }
+            a {
+                padding: 10px 30px;
+                display: block;
+            }
+            &.active {
+                border-right: 5px solid $warning-color;
+            }
+        }
+    }
+}
