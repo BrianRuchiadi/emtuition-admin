@@ -13,6 +13,8 @@ import { ClassesComponent } from './components/pages/classes/classes.component';
 import { StudentsComponent } from './components/pages/students/students.component';
 import { TimetableComponent } from './components/pages/timetable/timetable.component';
 import { TuitionfeeComponent } from './components/pages/tuitionfee/tuitionfee.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { RegisterComponent } from './components/pages/register/register.component';
 
 import { HeaderComponent } from './components/common/header/header.component';
 import { SidebarComponent } from './components/common/sidebar/sidebar.component';
@@ -23,9 +25,6 @@ import { AuthAdminGuard } from './guards/auth.admin.guard';
 import { NotificationService } from './services/notification/notification.service';
 import { RequestProviders } from './middlewares/request/request.provider';
 import { ErrorHandlerProviders } from './middlewares/error/error.provider';
-
-
-
 
 @NgModule({
   declarations: [
@@ -38,7 +37,9 @@ import { ErrorHandlerProviders } from './middlewares/error/error.provider';
     ClassesComponent,
     StudentsComponent,
     TimetableComponent,
-    TuitionfeeComponent
+    TuitionfeeComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
