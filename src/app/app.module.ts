@@ -9,6 +9,10 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { ClassesComponent } from './components/pages/classes/classes.component';
+import { StudentsComponent } from './components/pages/students/students.component';
+import { TimetableComponent } from './components/pages/timetable/timetable.component';
+import { TuitionfeeComponent } from './components/pages/tuitionfee/tuitionfee.component';
 
 import { HeaderComponent } from './components/common/header/header.component';
 import { SidebarComponent } from './components/common/sidebar/sidebar.component';
@@ -22,6 +26,7 @@ import { ErrorHandlerProviders } from './middlewares/error/error.provider';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +34,11 @@ import { ErrorHandlerProviders } from './middlewares/error/error.provider';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    NotificationComponent
+    NotificationComponent,
+    ClassesComponent,
+    StudentsComponent,
+    TimetableComponent,
+    TuitionfeeComponent
   ],
   imports: [
     BrowserModule,

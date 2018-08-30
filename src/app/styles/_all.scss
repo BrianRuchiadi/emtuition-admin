@@ -32,7 +32,8 @@ body {
     background-color: #DAE1DE;
     min-height: calc(100vh - 60px);
     padding-top: 20px;
-    .title {
+    .title,
+    .panel {
         display: block;
         border-radius: 3px;
         width: 90%;
@@ -50,6 +51,9 @@ body {
                 font-weight: 100;
             }
         }
+    }
+    .panel {
+        margin-top: 20px;
     }
     i {
         color: $warning-color;
