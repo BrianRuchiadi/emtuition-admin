@@ -16,7 +16,31 @@
             </tr>
             <tr>
                 <td width="20"></td>
-                <td colspan="2"> <input type="text"> </td>
+                <td colspan="2"> <input type="text" [(ngModel)]="loginForm.username"> </td>
+                <td width="20"></td>
+            </tr>
+            <tr>
+                <td width="20"></td>
+                <td colspan="2"> Password </td>
+                <td width="20"></td>
+            </tr>
+            <tr>
+                <td width="20"></td>
+                <td colspan="2"> <input type="password" [(ngModel)]="loginForm.password"> </td>
+                <td width="20"></td>
+            </tr>
+            <tr *ngIf="loginFormError">
+                <td width="20"></td>
+                <td colspan="2">
+                    <span class="error">* {{ loginFormError }}</span>
+                </td>
+                <td width="20"></td>
+            </tr>
+            <tr>
+                <td width="20"></td>
+                <td colspan="2">
+                    <button (click)="login()">Login</button>
+                </td>
                 <td width="20"></td>
             </tr>
             <tr>

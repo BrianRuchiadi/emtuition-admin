@@ -1,0 +1,13 @@
+@import './../variables.scss';
+button {
+    padding: 8px;
+    background-color: white;
+    letter-spacing: 1px;
+    color: black;
+    border: none;
+    &:hover {
+        background-color: $warning-color;
+        color: white;
+        cursor: pointer;
+    }
+}
