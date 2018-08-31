@@ -6,12 +6,33 @@
             width: calc(100% - 50px);
             border-spacing: 0px;
             tr {
+                background-color: #E9F0EA;
+                &:nth-of-type(even) {
+                    background-color: #DEE1DF;
+                }
                 th {
                     padding: 5px;
                     background-color: $warning-color;
                     color: white;
                     font-weight: bold;
                     border: 1px solid white;
+                    i {
+                        color: black;
+                        font-size: 12px;
+                        &:hover {
+                            cursor: pointer;
+                            color: $primary-color;
+                        }
+                    }
+                }
+                td {
+                    padding: 5px;
+                    &.exist {
+                        background-color: $primary-color;
+                    }
+                    &.not-exist {
+                        background-color: $danger-color;
+                    }
                 }
             }
         }
