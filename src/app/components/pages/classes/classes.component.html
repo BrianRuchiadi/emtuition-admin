@@ -8,6 +8,46 @@
                 <span class="description">Overview of class and assigning student to / from class.</span>
             </h1>
         </div>
+        <div class="manage panel">
+            <table>
+                <thead>
+                    <tr>
+                        <th width="20" rowspan="2">#</th>
+                        <th rowspan="2">Name</th>
+                        <th colspan="7">Day</th>
+                        <th colspan="2">Time</th>
+                        <th width="80" rowspan="2"></th>
+                    </tr>
+                    <tr>
+                        <th width="30">Mon</th>
+                        <th width="30">Tue</th>
+                        <th width="30">Wed</th>
+                        <th width="30">Thu</th>
+                        <th width="30">Fri</th>
+                        <th width="30">Sat</th>
+                        <th width="30">Sun</th>
+                        <th width="50">Start</th>
+                        <th width="50">End</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let class of dummyClasses">
+                        <td></td>
+                        <td>{{ class.name }}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="text-center">{{ class.timeStart }}</td>
+                        <td class="text-center">{{ class.timeEnd }}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <app-footer></app-footer>
 </div>

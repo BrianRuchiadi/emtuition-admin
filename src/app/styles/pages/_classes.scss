@@ -1,4 +1,19 @@
 @import './../variables';
 .classes {
-    .content {}
+    .content {
+        table {
+            margin: 0 auto;
+            width: calc(100% - 50px);
+            border-spacing: 0px;
+            tr {
+                th {
+                    padding: 5px;
+                    background-color: $warning-color;
+                    color: white;
+                    font-weight: bold;
+                    border: 1px solid white;
+                }
+            }
+        }
+    }
 }

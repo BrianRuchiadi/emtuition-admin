@@ -36,12 +36,13 @@ body {
     .panel {
         display: block;
         border-radius: 3px;
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: $secondary-color;
-        h1 {
+        h1,
+        h2 {
             margin: 0;
             padding-left: 25px;
             letter-spacing: 1px;
