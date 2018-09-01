@@ -8,6 +8,66 @@
                 <span class="description">View, assign and reallocate timetable.</span>
             </h1>
         </div>
+        <div class="manage panel">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Time</th>
+                        <th colspan="7">Day</th>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let time of timetable">
+                        <td>{{ time.time }}</td>
+                        <td [ngClass]="{
+                            'exist': time.monday.exist
+                        }">
+                            {{ time.monday.class }}
+                        </td>
+                        <td [ngClass]="{
+                            'exist': time.tuesday.exist
+                        }">
+                            {{ time.tuesday.class }}
+                        </td>
+                        <td [ngClass]="{
+                            'exist': time.wednesday.exist
+                        }">
+                            {{ time.wednesday.class }}
+                        </td>
+                        <td [ngClass]="{
+                            'exist': time.thursday.exist
+                        }">
+                            {{ time.thursday.class }}
+                        </td>
+                        <td [ngClass]="{
+                            'exist': time.friday.exist
+                        }">
+                            {{ time.friday.class }}
+                        </td>
+                        <td [ngClass]="{
+                            'exist': time.saturday.exist
+                        }">
+                            {{ time.saturday.class }}
+                        </td>
+                        <td [ngClass]="{
+                            'exist': time.sunday.exist
+                        }">
+                            {{ time.sunday.class }}
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <app-footer></app-footer>
 </div>

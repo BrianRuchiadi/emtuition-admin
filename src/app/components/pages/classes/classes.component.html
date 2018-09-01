@@ -15,7 +15,6 @@
                         <th width="20" rowspan="2">#</th>
                         <th rowspan="2">Name <i class="fa fa-arrows-v" (click)="sortData('name')"></i></th>
                         <th colspan="7">Day</th>
-                        <th colspan="2">Time </th>
                         <th width="80" rowspan="2"></th>
                     </tr>
                     <tr>
@@ -26,44 +25,19 @@
                         <th width="45">Fri <i class="fa fa-arrows-v" (click)="sortData('isFriday')"></i></th>
                         <th width="45">Sat <i class="fa fa-arrows-v" (click)="sortData('isSaturday')"></i></th>
                         <th width="45">Sun <i class="fa fa-arrows-v" (click)="sortData('isSunday')"></i></th>
-                        <th width="50">Start <i class="fa fa-arrows-v" (click)="sortData('timeStart')"></i></th>
-                        <th width="50">End <i class="fa fa-arrows-v" (click)="sortData('timeEnd')"></i></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let class of dummyClasses">
                         <td></td>
                         <td>{{ class.name }}</td>
-                        <td [ngClass]="{
-                          'exist': class.isMonday === true,
-                          'not-exist': class.isMonday === false
-                        }"></td>
-                        <td [ngClass]="{
-                          'exist': class.isTuesday,
-                          'not-exist': !class.isTuesday
-                        }"></td>
-                        <td [ngClass]="{
-                          'exist': class.isWednesday,
-                          'not-exist': !class.isWednesday
-                        }"></td>
-                        <td [ngClass]="{
-                          'exist': class.isThursday,
-                          'not-exist': !class.isThursday
-                        }"></td>
-                        <td [ngClass]="{
-                          'exist': class.isFriday,
-                          'not-exist': !class.isFriday
-                        }"></td>
-                        <td [ngClass]="{
-                          'exist': class.isSaturday,
-                          'not-exist': !class.isSaturday
-                        }"></td>
-                        <td [ngClass]="{
-                          'exist': class.isSunday,
-                          'not-exist': !class.isSunday
-                        }"></td>
-                        <td class="text-center">{{ class.timeStart }}</td>
-                        <td class="text-center">{{ class.timeEnd }}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td></td>
                     </tr>
                 </tbody>
